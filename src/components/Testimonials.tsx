@@ -11,19 +11,19 @@ const testimonials = [
   [
     {
       content:
-        'PropNews is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
+        'PropNews has been my go-to source for real estate insights.  A must-read for anyone serious about real estate investing',
       author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
+        name: 'Martin Payne ',
+        role: 'CEO at WZZUP Radio',
         image: avatarImage1,
       },
     },
     {
       content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
+        'PropNews offers comprehensive analysis and commentary on real estate topics, including market forecasts, investment strategies, and sector-specific insights, catering to both seasoned professionals and newcomers alike',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Andy Bernard',
+        role: 'Director at Cornell',
         image: avatarImage4,
       },
     },
@@ -31,19 +31,19 @@ const testimonials = [
   [
     {
       content:
-        'The best part about PropNews is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
+        'PropNews features contributions from industry experts, offering credible opinions and viewpoints on various aspects of real estate, from commercial to residential sectors, enhancing its authority and reliability.',
       author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
+        name: 'Bernie Mac',
+        role: 'Founder of Mac and Sons',
         image: avatarImage5,
       },
     },
     {
       content:
-        'There are so many things I had to do with my old software that I just don’t do at all with PropNews. Suspicious but I can’t say I don’t love it.',
+        'We love that PropNews includes contributions from industry experts, offering credible opinions and viewpoints on various aspects of real estate, from commercial to residential sectors, enhancing its authority and reliability.',
       author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
+        name: 'Arya Stark',
+        role: 'COO at The North Inc',
         image: avatarImage2,
       },
     },
@@ -51,19 +51,19 @@ const testimonials = [
   [
     {
       content:
-        'I used to have to remit tax to the EU and with PropNews I somehow don’t have to do that anymore. Nervous to travel there now though.',
+        'PropNews delivers data-driven articles, reports, and infographics that provide valuable metrics, trends, and statistics crucial for decision-making in the real estate market.',
       author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
+        name: 'Breinne Baratheon',
+        role: 'Founder of BarathCorp',
         image: avatarImage3,
       },
     },
     {
       content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
+        'PropNews offers educational resources such as guides, tutorials, and webinars that empower users with knowledge about real estate investing, market dynamics, and regulatory changes, making it a valuable learning hub for enthusiasts and professionals alike.',
       author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
+        name: 'Jesse Fadden',
+        role: 'Director at Federal Bureau of Control',
         image: avatarImage4,
       },
     },
@@ -88,7 +88,7 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Real Estate Professionals Live by this tool! 
+            Real Estate Professionals live by this tool! 
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Real Estate professional of all types use our tool to arm themselves. 

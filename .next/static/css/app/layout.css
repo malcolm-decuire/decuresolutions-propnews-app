@@ -971,6 +971,9 @@ select {
 .h-14 {
   height: 3.5rem;
 }
+.h-20 {
+  height: 5rem;
+}
 .h-3 {
   height: 0.75rem;
 }
@@ -994,15 +997,6 @@ select {
 }
 .h-full {
   height: 100%;
-}
-.h-4 {
-  height: 1rem;
-}
-.h-40 {
-  height: 10rem;
-}
-.h-20 {
-  height: 5rem;
 }
 .min-h-full {
   min-height: 100%;

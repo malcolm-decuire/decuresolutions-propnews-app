@@ -31,6 +31,9 @@ export default {
       maxWidth: {
         '2xl': '40rem',
       },
+      backgroundColor: {
+        'custom-pink': '#eac4d5',
+      },
     },
   },
   plugins: [formsPlugin, headlessuiPlugin],
