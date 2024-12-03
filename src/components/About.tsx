@@ -1,25 +1,15 @@
 'use client'
 
 import { useId } from 'react'
-import Image, { type ImageProps } from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-// import screenshotContacts from '@/images/screenshots/contacts.png'
-// import screenshotInventory from '@/images/screenshots/inventory.png'
-// import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
-
-import casestudy_government from '@/images/screenshots/casestudy_government.png'
-import casestudy_it_business from '@/images/screenshots/casestudy_it_business.png'
-import casestudy_saas from '@/images/screenshots/casestudy_saas.png'
-
 
 interface Feature {
   name: React.ReactNode
   summary: string
   description: string
-  image: ImageProps['src']
   icon: React.ComponentType
 }
 
@@ -29,7 +19,6 @@ const features: Array<Feature> = [
     summary: 'I make sure to listen more than I speak',
     description:
       'Customers value a great listener & pay an incredible story',
-    image: casestudy_government,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -60,11 +49,9 @@ const features: Array<Feature> = [
   },
   {
     name: 'Systems-first approach',
-    summary:
-      'I make sure to think holistically',
+    summary: 'I make sure to think holistically',
     description:
       'Customers are better served when we think about their entire journey',
-    image: casestudy_it_business,
     icon: function InventoryIcon() {
       return (
         <>
@@ -88,11 +75,9 @@ const features: Array<Feature> = [
   },
   {
     name: 'Prescriptive Collaboration',
-    summary:
-      'Teamwork makes the dreamwork',
+    summary: 'Teamwork makes the dreamwork',
     description:
       'I maintain a selfless teammate mindset in order to go above & beyond the goal',
-    image: casestudy_saas,
     icon: function ContactsIcon() {
       return (
         <>
@@ -151,84 +136,6 @@ function Feature({
   )
 }
 
-function FeaturesMobile() {
-  return (
-    <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
-      {features.map((feature) => (
-        <div key={feature.summary}>
-          <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image
-                className="w-full"
-                src={feature.image}
-                alt=""
-                sizes="52.75rem"
-              />
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-function FeaturesDesktop() {
-  return (
-    <TabGroup className="hidden lg:mt-20 lg:block">
-      {({ selectedIndex }) => (
-        <>
-          <TabList className="grid grid-cols-3 gap-x-8">
-            {features.map((feature, featureIndex) => (
-              <Feature
-                key={feature.summary}
-                feature={{
-                  ...feature,
-                  name: (
-                    <Tab className="ui-not-focus-visible:outline-none">
-                      <span className="absolute inset-0" />
-                      {feature.name}
-                    </Tab>
-                  ),
-                }}
-                isActive={featureIndex === selectedIndex}
-                className="relative"
-              />
-            ))}
-          </TabList>
-          <TabPanels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
-            <div className="-mx-5 flex">
-              {features.map((feature, featureIndex) => (
-                <TabPanel
-                  static
-                  key={feature.summary}
-                  className={clsx(
-                    'px-5 transition duration-500 ease-in-out ui-not-focus-visible:outline-none',
-                    featureIndex !== selectedIndex && 'opacity-60',
-                  )}
-                  style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
-                  aria-hidden={featureIndex !== selectedIndex}
-                >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image
-                      className="w-full"
-                      src={feature.image}
-                      alt=""
-                      sizes="52.75rem"
-                    />
-                  </div>
-                </TabPanel>
-              ))}
-            </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </TabPanels>
-        </>
-      )}
-    </TabGroup>
-  )
-}
-
 export function About() {
   return (
     <section
@@ -239,24 +146,51 @@ export function About() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            PropNews is a concept project to showcase my background in finance & software
+            DSPN is concept project for adtech & fintech
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            I use 3 skills to ensure I'm aligned w/ product, engineering, and sales   
-          </p>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Below are some case studies to demonstrate my skills  
+            DSPN enables real estate professionals at any stage in their career
           </p>
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
+        <div className="mt-16">
+          <div
+            style={{
+              position: 'relative',
+              width: '100%',
+              height: 0,
+              paddingTop: '56.25%',
+              overflow: 'hidden',
+              boxShadow: '0 2px 8px 0 rgba(63,69,81,0.16)',
+              borderRadius: '8px',
+            }}
+          >
+            <iframe
+              loading="lazy"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                border: 'none',
+              }}
+              src="https://www.canva.com/design/DAGYRn-ZOeo/fVEHGw3U4dbq3Mr1Kaor0A/view?embed"
+              allowFullScreen
+            />
+          </div>
+          <p className="mt-4 text-center text-slate-700">
+            <a
+              href="https://www.canva.com/design/DAGYRn-ZOeo/fVEHGw3U4dbq3Mr1Kaor0A/view?utm_content=DAGYRn-ZOeo&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              ABOUT US
+            </a>
+          </p>
+        </div>
       </Container>
     </section>
   )
 }
 
-
-/////////////////////////////////////////////////////////////////////////////////////
-//20240701 changes
-/////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////

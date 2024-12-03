@@ -7,10 +7,10 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: 'DSC',
-    default: 'Decure Solutions Fintech App',
+    default: 'Decure Solutions PropNews',
   },
   description:
-    'Real Estate reimagined.',
+    'RE 4 ALL.',
 }
 
 const inter = Inter({

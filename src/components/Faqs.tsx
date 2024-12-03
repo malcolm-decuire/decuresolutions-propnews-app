@@ -65,7 +65,7 @@ export function Faqs() {
             FAQs
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Email info@propnews.com for more additional help. 
+            For support contact info@dspn.net 
           </p>
         </div>
         <ul

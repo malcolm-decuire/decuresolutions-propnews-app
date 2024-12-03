@@ -123,9 +123,9 @@ export function Pricing() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">PropNews pricing</span>
+              <span className="relative">DSPN pricing</span>
             </span>{' '}
-            for all investors
+            for all users
           </h2>
           <p className="mt-4 text-lg text-slate-400">
             We cater to all real estate professionals no matter their size.

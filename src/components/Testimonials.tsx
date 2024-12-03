@@ -13,7 +13,7 @@ const testimonials = [
       content:
         'PropNews has been my go-to source for real estate insights.  A must-read for anyone serious about real estate investing',
       author: {
-        name: 'Martin Payne ',
+        name: 'Gina Payne ',
         role: 'CEO at WZZUP Radio',
         image: avatarImage1,
       },
@@ -22,8 +22,8 @@ const testimonials = [
       content:
         'PropNews offers comprehensive analysis and commentary on real estate topics, including market forecasts, investment strategies, and sector-specific insights, catering to both seasoned professionals and newcomers alike',
       author: {
-        name: 'Andy Bernard',
-        role: 'Director at Cornell',
+        name: 'Andrea Bernard',
+        role: 'Director at Acme',
         image: avatarImage4,
       },
     },
