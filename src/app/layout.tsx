@@ -1,35 +1,46 @@
-import { type Metadata } from 'next'
-import { Inter, Lexend } from 'next/font/google'
-import clsx from 'clsx'
+"use client";
 
-import '@/styles/tailwind.css'
+import { Inter, Lexend } from 'next/font/google';
+import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
+import ConditionalHeaderSidebarLayout from './(auth)/ConditionalHeaderSidebarLayout';
 
-export const metadata: Metadata = {
-  title: {
-    template: 'DSC',
-    default: 'Decure Solutions PropNews',
-  },
-  description:
-    'RE 4 ALL.',
-}
+import '@/styles/tailwind.css';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
-})
+});
 
 const lexend = Lexend({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-lexend',
-})
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
+  // Define the pages where the layout should apply
+  const demoPages = [
+    "/CaseStudies", // Should match the folder structure casing
+    "/demo",
+    "/kpione",
+    "/kpitwo",
+    "/kpithree",
+    "/demopolicyinfo",
+  ];
+  
+  // Normalize the pathname for comparison 
+  const normalizedPathname = pathname?.toLowerCase().replace(/\/$/, "");
+  const isDemoPage = demoPages.map(page => page.toLowerCase()).includes(normalizedPathname);
+  
+
   return (
     <html
       lang="en"
@@ -39,9 +50,13 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
-      <body className="flex h-full flex-col">{children}</body>
+      <body className="flex h-full flex-col">
+        {isDemoPage ? (
+          <ConditionalHeaderSidebarLayout>{children}</ConditionalHeaderSidebarLayout>
+        ) : (
+          children
+        )}
+      </body>
     </html>
-  )
+  );
 }
-
-

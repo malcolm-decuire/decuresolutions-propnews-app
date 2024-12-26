@@ -8,9 +8,9 @@ import {
   type Selection,
 } from "@nextui-org/react";
 import React from "react";
-import {Listbox, Tooltip, ListboxItem, ListboxSection} from "@nextui-org/react";
-import {Icon} from "@iconify/react";
-import {cn} from "@nextui-org/react";
+import { Listbox, Tooltip, ListboxItem, ListboxSection } from "@nextui-org/react";
+import { Icon } from "@iconify/react";
+import { cn } from "@nextui-org/react";
 
 export enum SidebarItemType {
   Nest = "nest",
@@ -66,7 +66,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
       group: cn(sectionClassesProp?.group, {
         "flex flex-col gap-1": isCompact,
       }),
-      heading: cn(sectionClassesProp?.heading, {
+      heading: cn(sectionClassesProp?.heading, "text-white", {
         hidden: isCompact,
       }),
     };
@@ -84,7 +84,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
           item.items && item.items?.length > 0 && item?.type === SidebarItemType.Nest;
 
         if (isNestType) {
-          // Is a nest type item , so we need to remove the href
+          // Remove the href for nested items
           delete item.href;
         }
 
@@ -107,7 +107,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
               isCompact || isNestType ? null : item.icon ? (
                 <Icon
                   className={cn(
-                    "text-default-500 group-data-[selected=true]:text-foreground",
+                    "text-white group-data-[selected=true]:text-foreground",
                     iconClassName,
                   )}
                   icon={item.icon}
@@ -125,7 +125,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
                   {item.icon ? (
                     <Icon
                       className={cn(
-                        "text-default-500 group-data-[selected=true]:text-foreground",
+                        "text-white group-data-[selected=true]:text-foreground",
                         iconClassName,
                       )}
                       icon={item.icon}
@@ -143,7 +143,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
                   key={item.key}
                   aria-label={item.title}
                   classNames={{
-                    heading: "pr-3",
+                    heading: "pr-3 text-white",
                     trigger: "p-0",
                     content: "py-0 pl-4",
                   }}
@@ -152,13 +152,13 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
                       <div className={"flex h-11 items-center gap-2 px-2 py-1.5"}>
                         <Icon
                           className={cn(
-                            "text-default-500 group-data-[selected=true]:text-foreground",
+                            "text-white group-data-[selected=true]:text-foreground",
                             iconClassName,
                           )}
                           icon={item.icon}
                           width={24}
                         />
-                        <span className="text-small font-medium text-default-500 group-data-[selected=true]:text-foreground">
+                        <span className="text-small font-medium text-white group-data-[selected=true]:text-foreground">
                           {item.title}
                         </span>
                       </div>
@@ -208,7 +208,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
               isCompact ? null : item.icon ? (
                 <Icon
                   className={cn(
-                    "text-default-500 group-data-[selected=true]:text-foreground",
+                    "text-white group-data-[selected=true]:text-foreground",
                     iconClassName,
                   )}
                   icon={item.icon}
@@ -227,7 +227,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
                   {item.icon ? (
                     <Icon
                       className={cn(
-                        "text-default-500 group-data-[selected=true]:text-foreground",
+                        "text-white group-data-[selected=true]:text-foreground",
                         iconClassName,
                       )}
                       icon={item.icon}
@@ -264,7 +264,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
             itemClasses?.base,
           ),
           title: cn(
-            "text-small font-medium text-default-500 group-data-[selected=true]:text-foreground",
+            "text-small font-medium text-white group-data-[selected=true]:text-foreground",
             itemClasses?.title,
           ),
         }}
@@ -304,8 +304,3 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
 Sidebar.displayName = "Sidebar";
 
 export default Sidebar;
-
-
-
-
-

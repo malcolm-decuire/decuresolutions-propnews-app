@@ -21,6 +21,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(auth)/demo/page.js"
     ],
+    "/(auth)/KPItwo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/KPItwo/page.js"
+    ],
     "/(auth)/demopolicyinfo/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -30,6 +35,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
+    ],
+    "/(auth)/KPIthree/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/KPIthree/page.js"
+    ],
+    "/(auth)/CaseStudies/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/CaseStudies/page.js"
     ]
   }
 }

@@ -2,7 +2,14 @@
 -Act as a teaching tool for learning about Snowflake Data Clean Rooms 
 -Enable learners to see the end-to-end process for Data Clean Room monetization 
 
-## How does one get started?  
+## How does one get started?
+-User should learn as much about Tailwind.Config & CSS before any major customization 
+-User should undertand page routing if they plan to use NextJS14 
+-User can update the main page.tsx to get an easy first win
+
+## Lessons Learned?
+-Designed and Aestethics can feel like chasing a ghost
+-A robust and thorough vision is key to pushing through peaks & valleys 
 
 0. Local development 
 
