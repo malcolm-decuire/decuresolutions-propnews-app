@@ -23,9 +23,7 @@
   },
   "../node_modules/@nextui-org/popover/dist/chunk-5KWE7IBM.mjs -> @nextui-org/dom-animation": {
     "id": "../node_modules/@nextui-org/popover/dist/chunk-5KWE7IBM.mjs -> @nextui-org/dom-animation",
-    "files": [
-      "static/chunks/_app-pages-browser_node_modules_nextui-org_dom-animation_dist_index_mjs.js"
-    ]
+    "files": []
   },
   "../node_modules/@nextui-org/popover/dist/chunk-ELWWYGWQ.mjs -> @nextui-org/dom-animation": {
     "id": "../node_modules/@nextui-org/popover/dist/chunk-ELWWYGWQ.mjs -> @nextui-org/dom-animation",

@@ -1,8 +1,5 @@
 {
-  "/(auth)/demopolicyinfo/page": "app/(auth)/demopolicyinfo/page.js",
-  "/(auth)/demo/page": "app/(auth)/demo/page.js",
-  "/(auth)/KPIone/page": "app/(auth)/KPIone/page.js",
-  "/(auth)/KPItwo/page": "app/(auth)/KPItwo/page.js",
   "/page": "app/page.js",
-  "/(auth)/KPIthree/page": "app/(auth)/KPIthree/page.js"
+  "/(auth)/demo/page": "app/(auth)/demo/page.js",
+  "/(auth)/demopolicyinfo/page": "app/(auth)/demopolicyinfo/page.js"
 }

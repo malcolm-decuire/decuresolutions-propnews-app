@@ -76,7 +76,7 @@ export default function DemoPolicy3(props: CardProps) {
         {isOpen ? <Icon icon="ci:close-sm" width={24} /> : "IMPACT"}
       </Button>
       <CardBody className="relative min-h-[300px] bg-gradient-to-br from-content1 to-default-100/50 p-8 before:inset-0 before:h-full before:w-full before:content-['']">
-        <h1 className="mb-4 text-default-400">FOUNDATION #3</h1>
+        <h1 className="mb-4 text-default-400">#3</h1>
         <h3 className="inline bg-gradient-to-br from-purple-500 to-purple-300 bg-clip-text text-6xl font-semibold tracking-tight text-transparent dark:to-purple-200">
          Aggregation
           <br />
