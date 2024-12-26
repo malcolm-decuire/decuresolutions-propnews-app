@@ -1,4 +1,4 @@
-// File: /Users/malcolmdecuire/decuiresolutions_catalog/_codebase/active-Q32024_20XX/decuresolutions-propnews-app/src/app/(auth)/register/page.tsx
+// File: /Users/malcolmdecuire/decuiresolutions_catalog/_codebase/active-Q32024_20XX/decuresolutions-dspn-app/src/app/(auth)/register/page.tsx
 import * as entry from '../../../../../src/app/(auth)/register/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

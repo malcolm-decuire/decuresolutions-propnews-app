@@ -1,11 +1,6 @@
 ## What's the purpose of this project?
-Fintech App using: 
--React v18
--Typescript v5.3
--Next.js v14
--Tailwind CSS v3.4
--Headless UI v2.1 
--Markdoc v0.1
+-Act as a teaching tool for learning about Snowflake Data Clean Rooms 
+-Enable learners to see the end-to-end process for Data Clean Room monetization 
 
 ## How does one get started?  
 
@@ -39,17 +34,41 @@ cd /workingdir
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
 ## How does one customize this repo? 
+├── src
+│   ├── app
+│   │   ├── (auth) --> update the sidebar/nav funcitonality/demo features 
+│   │   ├── favicon.ico
+│   │   ├── layout.tsx
+│   │   ├── not-found.tsx
+│   │   └── page.tsx
+│   ├── components --> update the modular features you see on site 
+│   │   ├── About.tsx
+│   │   ├── Button.tsx
+│   │   ├── CallToAction.tsx
+│   │   ├── CallToAction2.tsx
+│   │   ├── Container.tsx
+│   │   ├── Faqs.tsx
+│   │   ├── Fields.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Logo.tsx
+│   │   ├── NavLink.tsx
+│   │   ├── Pricing.tsx
+│   │   ├── PrimaryFeatures.tsx
+│   │   ├── SecondaryFeatures.tsx
+│   │   ├── SlimLayout.tsx
+│   │   └── Testimonials.tsx
+│   ├── images --> change background items 
+│   │   ├── avatars
+│   │   ├── background-auth.jpg
+│   │   ├── background-call-to-action.jpg
+│   │   ├── background-faqs.jpg
+│   │   ├── background-features.jpg
+│   │   ├── logos
+│   │   └── screenshots
+│   └── styles
+│       └── tailwind.css
+├── tailwind.config.ts
+└── tsconfig.json
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## What type of license does this repo have? 
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## How do does one learn more? 
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation

@@ -19,7 +19,7 @@ export default function Register() {
         </Link>
       </div>
       <h2 className="mt-20 text-lg font-semibold text-gray-900">
-        Get started for free
+        DSPN DCR Reports coming Q4-2028
       </h2>
       <p className="mt-2 text-sm text-gray-700">
         Already registered?{' '}
@@ -70,10 +70,10 @@ export default function Register() {
           label="How did you hear about us?"
           name="referral_source"
         >
-          <option>AltaVista search</option>
-          <option>Super Bowl commercial</option>
-          <option>Our route 34 city bus ad</option>
-          <option>The “Never Use This” podcast</option>
+          <option>Bloomberg TV</option>
+          <option>MSNBC</option>
+          <option>PERE</option>
+          <option>Redfin</option>
         </SelectField>
         <div className="col-span-full">
           <Button type="submit" variant="solid" color="blue" className="w-full">
