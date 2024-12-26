@@ -1,22 +1,22 @@
 "use client";
 
-import { Inter, Lexend } from 'next/font/google';
-import clsx from 'clsx';
-import { usePathname } from 'next/navigation';
-import ConditionalHeaderSidebarLayout from './(auth)/ConditionalHeaderSidebarLayout';
+import { Inter, Lexend } from "next/font/google";
+import clsx from "clsx";
+import { usePathname } from "next/navigation";
+import ConditionalHeaderSidebarLayout from "./(auth)/ConditionalHeaderSidebarLayout";
 
-import '@/styles/tailwind.css';
+import "@/styles/tailwind.css";
 
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
 });
 
 const lexend = Lexend({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-lexend',
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lexend",
 });
 
 export default function RootLayout({
@@ -28,29 +28,31 @@ export default function RootLayout({
 
   // Define the pages where the layout should apply
   const demoPages = [
-    "/CaseStudies", // Should match the folder structure casing
+    "/casestudies", // Normalize path to lowercase
     "/demo",
     "/kpione",
     "/kpitwo",
     "/kpithree",
     "/demopolicyinfo",
   ];
-  
+
   // Normalize the pathname for comparison 
   const normalizedPathname = pathname?.toLowerCase().replace(/\/$/, "");
-  const isDemoPage = demoPages.map(page => page.toLowerCase()).includes(normalizedPathname);
-  
+
+  // Check if the normalized pathname exists in demoPages
+  const isDemoPage = demoPages.includes(normalizedPathname || "");
 
   return (
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        "h-full scroll-smooth bg-white antialiased",
         inter.variable,
-        lexend.variable,
+        lexend.variable
       )}
     >
       <body className="flex h-full flex-col">
+        {/* Conditional rendering based on path */}
         {isDemoPage ? (
           <ConditionalHeaderSidebarLayout>{children}</ConditionalHeaderSidebarLayout>
         ) : (

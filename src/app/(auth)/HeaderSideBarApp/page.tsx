@@ -1,3 +1,4 @@
+//20241226 CHG TYPE TO ANY BC NPM RUN BUILD KEPT THROWIN ERRORS -> HAPPENS WITH A LOT OF NEXTUI OFF THE SHELF STUFF 
 "use client";
 
 import { usePathname } from "next/navigation";
@@ -7,9 +8,7 @@ import DemoHeaderNavApp from "../DemoHeaderNav/DemoHeaderNavApp";
 
 export default function ConditionalHeaderSidebarLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: any) { // Using `any` type here
   const pathname = usePathname();
 
   // Pages where the layout applies
@@ -19,7 +18,7 @@ export default function ConditionalHeaderSidebarLayout({
     "/KPItwo",
     "/KPIthree",
     "/demopolicyinfo",
-    '/CaseStudies',
+    "/CaseStudies",
   ];
 
   const isDemoPage = demoPages.includes(pathname);

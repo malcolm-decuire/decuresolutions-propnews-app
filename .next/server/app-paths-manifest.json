@@ -1,5 +1,15 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(auth)/CaseStudies/page": "app/(auth)/CaseStudies/page.js",
+  "/(auth)/KPIone/page": "app/(auth)/KPIone/page.js",
+  "/(auth)/HeaderSideBarApp/page": "app/(auth)/HeaderSideBarApp/page.js",
+  "/(auth)/KPIthree/page": "app/(auth)/KPIthree/page.js",
+  "/(auth)/KPItwo/page": "app/(auth)/KPItwo/page.js",
+  "/(auth)/demo/DemoHome.tsx/page": "app/(auth)/demo/DemoHome.tsx/page.js",
   "/(auth)/demo/page": "app/(auth)/demo/page.js",
   "/(auth)/demopolicyinfo/page": "app/(auth)/demopolicyinfo/page.js",
-  "/(auth)/CaseStudies/page": "app/(auth)/CaseStudies/page.js"
+  "/page": "app/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
